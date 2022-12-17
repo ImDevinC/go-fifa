@@ -14,6 +14,7 @@ var expectedTeam = fifa.TeamResponse{
 	Type:            1,
 	AgeType:         7,
 	FootballType:    0,
+	FoundationYear:  1913,
 	Gender:          fifa.MaleGender,
 	Name: []fifa.LocaleDescription{{
 		Locale:      "en-GB",
