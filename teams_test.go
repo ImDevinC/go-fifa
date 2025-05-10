@@ -18,7 +18,7 @@ var expectedTeam = fifa.TeamResponse{
 	Gender:          fifa.MaleGender,
 	Name: []fifa.LocaleDescription{{
 		Locale:      "en-GB",
-		Description: "United States",
+		Description: "USA",
 	}},
 	AssociationId: "USA",
 	City:          "CHICAGO",
