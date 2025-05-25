@@ -15,11 +15,14 @@ The following endpoints are currently supported
 | ----------------------------------------------------------- | --------------------- |
 | `/competitions`                                             | `GetCompetitions()`   |
 | `/competitions/{competitionId}`                             | `GetCompetition()`    |
+| `/competitions/search`                                     | `SearchCompetition()`|
 | `/timelines/{competitionId}/{seasonId}/{stageId}/{matchId}` | `GetMatchEvents()`    |
 | `/live/football/now`                                        | `GetCurrentMatches()` |
 | `/calendar/matches`                                         | `GetMatches()`        |
 | `/teams/{teamId}`                                           | `GetTeam()`           |
+| `/teams/search`                                           | `SearchTeam()` |
 | `/players/{playerId}`                                       | `GetPlayer()`         |
+| `/players/search`                                         | `SearchPlayer()`|
 | `/seasons/{seasonId}`                                       | `GetSeason()`         |
 
 ### Use of `any`
