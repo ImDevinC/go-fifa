@@ -30,11 +30,11 @@ type HTTPClient interface {
 	Do(req *http.Request) (*http.Response, error)
 }
 
-func (c *Client) get(path string, respData interface{}, reqData interface{}) (interface{}, error) {
+func (c *Client) get(path string, respData any, reqData any) (any, error) {
 	return c.sendRequest(http.MethodGet, path, respData, reqData)
 }
 
-func (c *Client) sendRequest(method string, path string, respData interface{}, reqData interface{}) (interface{}, error) {
+func (c *Client) sendRequest(method string, path string, respData any, reqData any) (any, error) {
 	req, err := c.newRequest(method, path, reqData)
 	if err != nil {
 		return nil, err
@@ -47,7 +47,7 @@ func (c *Client) sendRequest(method string, path string, respData interface{}, r
 	return respData, nil
 }
 
-func (c *Client) newRequest(method string, path string, data interface{}) (*http.Request, error) {
+func (c *Client) newRequest(method string, path string, data any) (*http.Request, error) {
 	if c.ApiBaseURL == "" {
 		c.ApiBaseURL = defaultAPIBaseURL
 	}
@@ -55,7 +55,7 @@ func (c *Client) newRequest(method string, path string, data interface{}) (*http
 	return c.newStandardRequest(url, method, data)
 }
 
-func (c *Client) newStandardRequest(url string, method string, data interface{}) (*http.Request, error) {
+func (c *Client) newStandardRequest(url string, method string, data any) (*http.Request, error) {
 	req, err := http.NewRequest(method, url, nil)
 	if err != nil {
 		return nil, err
@@ -71,7 +71,7 @@ func (c *Client) newStandardRequest(url string, method string, data interface{})
 	return req, nil
 }
 
-func (c *Client) doRequest(req *http.Request, resp interface{}) error {
+func (c *Client) doRequest(req *http.Request, resp any) error {
 	c.setRequestHeaders(req)
 	if c.Client == nil {
 		c.Client = http.DefaultClient

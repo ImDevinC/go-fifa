@@ -75,6 +75,8 @@ func getMatchData(client *fifa.Client) error {
 
 func main() {
 	client := &fifa.Client{}
-	getMatchData(client)
-
+	_, err := client.SearchCompetition(&fifa.SearchOptions{Name: "FIFA World Cup"})
+	if err != nil {
+		log.Fatal(err)
+	}
 }

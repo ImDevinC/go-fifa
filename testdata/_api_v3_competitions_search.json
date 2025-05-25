@@ -1,0 +1,28 @@
+{
+  "ContinuationToken": "50",
+  "ContinuationHash": "50",
+  "Results": [
+    {
+      "IdCompetition": "521",
+      "Name": [
+        {
+          "Locale": "en-GB",
+          "Description": "FIFA Women's World Cup Qualifier"
+        }
+      ],
+      "IdConfederation": [],
+      "IdMemberAssociation": [],
+      "IdOwner": "FIFA",
+      "Gender": 2,
+      "FootballType": 0,
+      "TeamType": 1,
+      "CompetitionType": 3,
+      "AgeType": 7,
+      "DisplayOrder": null,
+      "Properties": {
+        "IdIFES": "FWWC_Q"
+      },
+      "IsUpdateable": null
+    }
+  ]
+}

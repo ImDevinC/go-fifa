@@ -1,0 +1,43 @@
+{
+  "ContinuationToken": null,
+  "ContinuationHash": null,
+  "Results": [
+    {
+      "IdPlayer": "390267",
+      "Name": [
+        {
+          "Locale": "en-GB",
+          "Description": "Christian  PULISIC"
+        }
+      ],
+      "Alias": [
+        {
+          "Locale": "en-GB",
+          "Description": "Christian PULISIC"
+        }
+      ],
+      "BirthDate": "1998-09-18T00:00:00Z",
+      "Weight": 72.0,
+      "Height": 179.0,
+      "BirthPlace": "Pennsylvania",
+      "IdCountry": "USA",
+      "InternationalCaps": 56,
+      "InternationalDebut": "2016-03-29T00:00:00Z",
+      "TopCompetitionDebut": null,
+      "PictureUrl": null,
+      "ThumbnailUrl": null,
+      "TwitterAccount": null,
+      "PreferredFoot": 9999,
+      "MediaContent": [],
+      "LocalizedTwitterAccounts": null,
+      "Goals": 22,
+      "PlayerPicture": null,
+      "Properties": {
+        "StatsPerformIfesId": "390267",
+        "IdStatsPerform": "93soe2rjn0z874cc9ofcesgkp",
+        "IdIFES": "390267"
+      },
+      "IsUpdateable": null
+    }
+  ]
+}

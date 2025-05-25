@@ -190,9 +190,8 @@ type PlayerResponse struct {
 	Id                       string              `json:"IdPlayer"`
 	Name                     []LocaleDescription `json:"Name"`
 	Alias                    []LocaleDescription `json:"Alias"`
-	BirthDate                time.Time           `json:"BirthDate"`
-	Weight                   int                 `json:"Weight"`
-	Height                   int                 `json:"Height"`
+	Weight                   float64             `json:"Weight"`
+	Height                   float64             `json:"Height"`
 	Birthplace               string              `json:"BirthPlace"`
 	CountryId                string              `json:"IdCountry"`
 	InternationalCaps        int                 `json:"InternationalCaps"`
@@ -499,4 +498,25 @@ type VARNotification struct {
 	Reason   int `json:"Reason"`
 	Status   int `json:"Status"`
 	Result   int `json:"Result"`
+}
+
+// SearchPlayerResponse represents the response from the search API
+// when searching for a player
+type SearchPlayerResponse struct {
+	PaginationResponse
+	Results []PlayerResponse `json:"Results"`
+}
+
+// SearchTeamResponse represents the response from the search API
+// when searching for a team
+type SearchTeamResponse struct {
+	PaginationResponse
+	Results []TeamResponse `json:"Results"`
+}
+
+// SearchCompetitionResponse represents the response from the search API
+// when searching for a competition
+type SearchCompetitionResponse struct {
+	PaginationResponse
+	Results []Competition `json:"Results"`
 }

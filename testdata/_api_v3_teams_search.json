@@ -1,0 +1,47 @@
+{
+  "ContinuationToken": null,
+  "ContinuationHash": null,
+  "Results": [
+    {
+      "IdTeam": "2000019635",
+      "IdConfederation": "CAF",
+      "Type": 0,
+      "AgeType": 7,
+      "FootballType": 0,
+      "Gender": 1,
+      "Name": [
+        {
+          "Locale": "en-GB",
+          "Description": "Paradou AC"
+        }
+      ],
+      "IdAssociation": "ALG",
+      "IdCity": null,
+      "Headquarters": null,
+      "TrainingCentre": null,
+      "OfficialSite": null,
+      "City": "al-Jaza’ir (Algiers)",
+      "IdCountry": "ALG",
+      "PostalCode": null,
+      "RegionName": null,
+      "ShortClubName": "Paradou",
+      "Abbreviation": "PAC",
+      "Street": null,
+      "FoundationYear": 1994,
+      "Stadium": null,
+      "PictureUrl": "https://api.fifa.com/api/v3/picture/teams-{format}-{size}/2000019635",
+      "ThumbnailUrl": null,
+      "DisplayName": [
+        {
+          "Locale": "en-gb",
+          "Description": "PAC"
+        }
+      ],
+      "Content": [],
+      "Properties": {
+        "IdStatsPerform": "9bvywjkxdag5aye9rvzedglat"
+      },
+      "IsUpdateable": null
+    }
+  ]
+}
