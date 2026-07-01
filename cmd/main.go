@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
 	"strings"
@@ -61,22 +62,24 @@ func getLiveMatches(client *fifa.Client) error {
 
 func getMatchData(client *fifa.Client) error {
 	events, err := client.GetMatchEvents(&fifa.GetMatchEventOptions{
-		CompetitionId: "2000000005",
-		SeasonId:      "400250052",
-		StageId:       "b1ayaoa4q68n6464fy4orklqs",
-		MatchId:       "3y748w6ppuxciynnoonrt9jx0",
+		CompetitionId: "17",
+		SeasonId:      "285023",
+		StageId:       "289287",
+		MatchId:       "400021512",
 	})
 	if err != nil {
 		return err
 	}
-	fmt.Printf("%+v\n", events)
+	evts, err := json.Marshal(events)
+	if err != nil {
+		return err
+	}
+	fmt.Println(string(evts))
+
 	return nil
 }
 
 func main() {
 	client := &fifa.Client{}
-	_, err := client.SearchCompetition(&fifa.SearchOptions{Name: "FIFA World Cup"})
-	if err != nil {
-		log.Fatal(err)
-	}
+	getMatchData(client)
 }

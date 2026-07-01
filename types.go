@@ -63,6 +63,7 @@ const (
 	PenaltyMissed2   MatchEvent = 65   // A player missed their penalty??
 	GoalieSaved      MatchEvent = 57   // The goalie stopped the shot
 	VARPenalty       MatchEvent = 72   // A penalty was awarded after VAR
+	Hydration        MatchEvent = 83   // Hydration break
 	Pending          MatchEvent = 9999 // This event is still pending a final event type, query again for the new event
 )
 
